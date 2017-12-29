@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_main"
+    android:clickable="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/visibleLayout">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/contentMain">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:visibility="invisible"
+            android:id="@+id/hiddenBarMainScreen"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/playPauseButton"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="31dp"
+                android:background="@drawable/pause_icon"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/defaultMusic"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/now_playing_bar_eq_image"
+                android:layout_marginLeft="13dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Now Playing"
+                android:id="@+id/nowPlaying"
+                android:layout_toRightOf="@+id/defaultMusic"
+                android:textColor="#bdbdbd"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="11dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/songTitleMainScreen"
+                android:layout_below="@+id/nowPlaying"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="160dp"
+                android:singleLine="true"
+                android:text="..."
+                android:textColor="#ffffff"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignLeft="@id/nowPlaying"
+                android:layout_alignStart="@id/nowPlaying"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/noSongs">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No Songs Available at the moment.."
+            android:textColor="#000000"
+            />
+        
+    </RelativeLayout>
+
+</RelativeLayout>
