@@ -1,4 +1,7 @@
 # Echo Music Player
+
+<img src="Logotype primary.png" width="60%" height="60%" />
+
 ##### *A simple Music Player App for Android devices.*
 
 ## Description:
