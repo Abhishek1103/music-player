@@ -1,4 +1,4 @@
-# Echo Music Player
+# Music Player
 
 <img src="Logotype primary.png" width="60%" height="60%" />
 
@@ -19,9 +19,3 @@ A Simple music player ready to be further developed with your imagination as the
 * An AudioVisualiser using external library [ Cleveroad.Wave ](https://github.com/Cleveroad/WaveInApp)
 
 
-## Tasks
-- [ ] Searching song lists
-- [ ] Making custom playlists
-- [ ] Notification dock
-- [ ] Screen Widget Support
-- [ ] Fetching lyrics of the song online 
